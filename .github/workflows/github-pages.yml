@@ -12,19 +12,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+
       - name: Move to project folder
         run: |
           cd ngx-theming
           ls -l
-          pwd
-          cd ..
-          pwd
-          ls -la
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: '../.nvmrc'
 
       - name: Install dependencies
         run: npm install
