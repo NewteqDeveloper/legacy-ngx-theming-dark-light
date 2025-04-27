@@ -15,6 +15,7 @@ jobs:
       - name: Move to project folder
         run: |
           cd ngx-theming
+          ls -l
           pwd
           cd ..
           pwd
