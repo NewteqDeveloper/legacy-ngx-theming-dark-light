@@ -16,6 +16,9 @@ jobs:
         run: |
           cd ngx-theming
           pwd
+          cd ..
+          pwd
+          ls -la
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
