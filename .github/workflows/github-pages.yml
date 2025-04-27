@@ -17,19 +17,18 @@ jobs:
         with:
           node-version-file: '.nvmrc'
 
-      - name: Move to project folder
+      - name: Install dependencies
         run: |
           cd ngx-theming
-          ls -l
-
-      - name: Install dependencies
-        run: npm install
+          npm install
 
       - name: Build Angular project
-        run: npm run build
+        run: |
+          cd ngx-theming
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/ngx-theming
+          publish_dir: ./ngx-theming/dist/ngx-theming
