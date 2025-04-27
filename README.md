@@ -9,7 +9,8 @@ If there are any changes that you feel should be included in the repository, ple
 ## Demo
 
 Currently the demo page is unavailable. I am in the process of migrating the deployment page. Once it has been completed, this will be restored.
-~~You can find a demo of this site running at https://newteq.github.io/ngx-theming-dark-light~~
+The page has been successfully transferred to work with github actions and is deployed on the current link, but it's broken. Still pending an update
+~~You can find a demo of this site running at https://newteqdeveloper.github.io/legacy-ngx-theming-dark-light/~~
 
 ## Angular Information
 
