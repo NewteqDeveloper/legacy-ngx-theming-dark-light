@@ -1,3 +1,6 @@
+# Migrated
+Moved to: https://codeberg.org/newteq/sample-ngx-theming-dark-light
+
 # NgxTheming
 
 ## About
